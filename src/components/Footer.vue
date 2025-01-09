@@ -1,6 +1,6 @@
 <template>
   <footer class="bg-blue-500 text-white p-4 text-center">
-    <p>&copy; 2023 Developer Profile. All rights reserved.</p>
+    <p>&copy; 2024 Developer Profile. All rights reserved.</p>
   </footer>
 </template>
 
@@ -8,7 +8,7 @@
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'Footer',
+  name: 'Footer_page',
 });
 </script>
 

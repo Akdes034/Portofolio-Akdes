@@ -1,25 +1,35 @@
 <template>
   <div class="min-h-screen flex flex-col">
-    <Header />
-    <Body />
-    <Footer />
+    <!-- Header untuk ukuran medium ke atas -->
+    <header_page class="md:block hidden" />
+
+    <!-- Header untuk ukuran mobile -->
+    <div class="block md:hidden">
+      
+    </div>
+
+
+    <div class="min-h-screen flex flex-col">
+      <!-- Sidebar untuk ukuran medium ke atas -->
+      <sidebar_page class="md:flex hidden" />
+      <router-view />
+    </div>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-import Header from './components/Header.vue';
-import Body from './components/Body.vue';
-import Footer from './components/Footer.vue';
+import { defineComponent } from 'vue'
+import sidebar_page from './components/Sidebar.vue'
+import header_page from './components/Header.vue'
+
 
 export default defineComponent({
   name: 'App',
   components: {
-    Header,
-    Body,
-    Footer,
+    sidebar_page,
+    header_page,
   },
-});
+})
 </script>
 
 <style>
