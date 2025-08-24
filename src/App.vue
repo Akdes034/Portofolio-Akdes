@@ -5,7 +5,7 @@
 
     <!-- Header untuk ukuran mobile -->
     <div class="block md:hidden">
-      
+      <topbar_page></topbar_page>
     </div>
 
 
@@ -21,6 +21,7 @@
 import { defineComponent } from 'vue'
 import sidebar_page from './components/Sidebar.vue'
 import header_page from './components/Header.vue'
+import topbar_page from './components/Topbar.vue'
 
 
 export default defineComponent({
@@ -28,6 +29,7 @@ export default defineComponent({
   components: {
     sidebar_page,
     header_page,
+    topbar_page,
   },
 })
 </script>
